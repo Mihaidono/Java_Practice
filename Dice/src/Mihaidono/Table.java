@@ -44,7 +44,7 @@ public class Table {
         if (!playerList.isEmpty() && playerList.containsValue(rmPlayer)) {
             for(Map.Entry<Integer,Player> entry:playerList.entrySet()){
                 if(entry.getValue().equals(rmPlayer)){
-                    playerList.remove(entry.getKey(),rmPlayer);
+                    playerList.remove(entry.getKey(),entry.getValue());
                 }
             }
             return 1;
